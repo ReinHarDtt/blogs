@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/about_me.css">
+	<script src="./js/jquery2.1.4.min.js"></script>
+	<title>about_me</title>
+</head>
+<body>
+<div class="topNav">
+	<a  class="logo floatl" href=""><img src="./images/logo.jpg"></a>
+	<ul class="top_ul floatr">
+		<li><a href="javascript:void(0)">首页</a><div class="show">Protal</div></li>
+		<li><a class="color"href="javascript:void(0)">关于我</a><div class="show">About</div></li>
+		<li><a href="javascript:void(0)">慢生活</a><div class="show">Life</div></li>
+		<li><a href="javascript:void(0)">碎言碎语</a><div class="show">Doing</div></li>
+		<li><a href="javascript:void(0)">学无止境</a><div class="show">Learn</div></li>
+		<li><a href="javascript:void(0)">留言板</a><div class="show">Guestbook</div></li>
+	</ul>
+</div>
+<div class="content_box clearfix">
+		<header>
+			<h1 class="green_content">
+				<a href="" class="green_content_a1">网站首页</a><a href="" class="green_content_a2">关于我</a>
+				<span class="saying">
+					n像“草根”一样，紧贴着地面，低调的存在，冬去春来，枯荣无恙。
+				</span>
+			</h1>
+		</header>
+	<article class="main_content clearfix">
+		<article class="content_text clearfix">
+			<section class="text_box">
+				<header>
+					<h2>
+						IP要突破2000+了
+					</h2>
+					<p>
+						<span>发布时间：2016-05-20作者：杨青</span>
+						[<a href="">日记</a>]
+					</p>
+				</header>
+				<section class="content_main_text clearfix">
+					<a href="" class="left_img_box">
+						<img src="./images/text1.jpg" width="180px">
+					</a>
+					<p class="right_box">
+						很久都没有更新网站了，现在得空看了下网站怎么样了，没有想到，百度权重4,PR3,访问IP也在上升，一年的时间没有更新，看来一次性做好一个网站很有必要，这回一劳永逸了
+					</p>
+					<p class="right_button">
+						<span>
+							阅读全文
+						</span>
+					</p>
+				</section>
+			</section>
+			<section class="text_box">
+				<header>
+					<h2>
+						IP要突破2000+了
+					</h2>
+					<p>
+						<span>发布时间：2016-05-20作者：杨青</span>
+						[<a href="">日记</a>]
+					</p>
+				</header>
+				<section class="content_main_text clearfix">
+					<a href="" class="left_img_box">
+						<img src="./images/text1.jpg" width="180px">
+					</a>
+					<p class="right_box">
+						很久都没有更新网站了，现在得空看了下网站怎么样了，没有想到，百度权重4,PR3,访问IP也在上升，一年的时间没有更新，看来一次性做好一个网站很有必要，这回一劳永逸了
+					</p>
+					<p class="right_button">
+						<span>
+							阅读全文
+						</span>
+					</p>
+				</section>
+			</section>
+			<section class="text_box">
+				<header>
+					<h2>
+						IP要突破2000+了
+					</h2>
+					<p>
+						<span>发布时间：2016-05-20作者：杨青</span>
+						[<a href="">日记</a>]
+					</p>
+				</header>
+				<section class="content_main_text clearfix">
+					<a href="" class="left_img_box">
+						<img src="./images/text1.jpg" width="180px">
+					</a>
+					<p class="right_box">
+						很久都没有更新网站了，现在得空看了下网站怎么样了，没有想到，百度权重4,PR3,访问IP也在上升，一年的时间没有更新，看来一次性做好一个网站很有必要，这回一劳永逸了
+					</p>
+					<p class="right_button">
+						<span>
+							阅读全文
+						</span>
+					</p>
+				</section>
+			</section>
+		</article>
+		
+			
+	</article>
+	
+		<aside class="right_bar ">
+			<ul>
+				<li>网名：{$file['webname']}</li>
+				<li>姓名：{$file['name']}</li>
+				<li>籍贯：{$file['address']}</li>
+				<li>现居：{$file['now_address']}</li>
+				<li>职业：{$file['job']}</li>
+				<li>副业：<a href="" style="color:#1CA368">{$file['sec_job']}</a></li>
+				<li>喜欢的书：{$file['love_book']}</li>
+				<li>喜欢的音乐：{$file['love_music']}</li>
+				<li><img src="__PUBLIC__/home/images/qq.png"></li>
+				<li><img src="__PUBLIC__/home/images/mail.png"></li>
+			</ul>
+		</aside>
+	
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+			 $(".top_ul>li>a").mouseover(function(){
+			 	var index = $(this).parent().index()
+			 	$(".show").eq(index).removeClass("bbb")
+			 	$(".show").eq(index).addClass("aaa")
+			})
+			  $(".top_ul>li>a").mouseout(function(){
+			 	var index = $(this).parent().index()
+			 	$(".show").eq(index).removeClass("aaa");
+			 	$(".show").eq(index).addClass("bbb")
+			})
+			$(".top_ul li a").click(function(){
+				$(this).addClass("color").parent().siblings().children().removeClass("color")
+			})
+		})
+</script>
